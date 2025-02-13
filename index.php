@@ -7,44 +7,7 @@
     <title>ARJ Records</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        .navbar {
-            background-color: #000;
-        }
-        .navbar-brand img {
-            width: 120px;
-        }
-        .nav-link {
-            color: white !important;
-            font-weight: 500;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1600x600/?concert,music') center/cover no-repeat;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .section-title {
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .footer {
-            background-color: #000;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
