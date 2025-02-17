@@ -11,18 +11,30 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+    <nav id="cabecera" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
             <a class="navbar-brand" href="#">
                 <img src="/src/logo/logoARJ.png" alt="Logo">
             </a>
+
+            <!-- Barra de búsqueda centrada -->
+            <div class="search-container mx-auto">
+                <form class="d-flex">
+                    <input class="form-control search-input" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn search-button" type="submit">🔍</button>
+                </form>
+            </div>
+
+            <!-- Botón de menú en móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
                     <li class="nav-item dropdown">
@@ -49,6 +61,9 @@
             </div>
         </div>
     </nav>
+
+
+    <h1 class="h1">La musica</h1>
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -70,7 +85,11 @@
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
+    <br>
+    <div>
 
+    </div>
+    <br>
     <div class="container novedades-section">
         <h2 class="section-title">Novedades</h2>
         <div class="row">
