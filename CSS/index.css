@@ -1,32 +1,42 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .navbar {
     background-color: #000;
 }
+
 .navbar-brand img {
     width: 120px;
 }
+
 .nav-link {
     color: white !important;
     font-weight: 500;
 }
-.hero {
-    background: url('https://source.unsplash.com/1600x600/?concert,music') center/cover no-repeat;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
+
+/* Asegura que el contenedor de novedades se muestre */
+.novedades-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 50px; /* Asegura margen superior suficiente */
 }
+
 .section-title {
     font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
 }
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 .footer {
     background-color: #000;
     color: white;

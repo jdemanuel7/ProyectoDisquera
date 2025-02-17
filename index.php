@@ -49,7 +49,6 @@
             </div>
         </div>
     </nav>
-
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -72,12 +71,7 @@
         </button>
     </div>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        Descubre lo mejor de la música
-    </div>
-
-    <div class="container mt-5">
+    <div class="container novedades-section">
         <h2 class="section-title">Novedades</h2>
         <div class="row">
             <div class="col-md-4">
