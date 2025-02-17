@@ -12,11 +12,10 @@
 
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/src/logoARJ.png" alt="Logo">
+                <img src="/src/logo/logoARJ.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +23,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="artistasDropdown" role="button"
@@ -51,12 +50,33 @@
         </div>
     </nav>
 
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="src/img_carrusel/kendricklamar.jpg" class="d-block w-100" alt="Concierto">
+            </div>
+            <div class="carousel-item">
+                <img src="src/img_carrusel/kaze.webp" class="d-block w-100" alt="DJ">
+            </div>
+            <div class="carousel-item">
+                <img src="src/img_carrusel/periferia.jpg" class="d-block w-100" alt="Guitarra en vivo">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
     <!-- Hero Section -->
     <div class="hero">
         Descubre lo mejor de la música
     </div>
 
-    <!-- Sección de Novedades -->
     <div class="container mt-5">
         <h2 class="section-title">Novedades</h2>
         <div class="row">
@@ -93,7 +113,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 ARJ Records - Todos los derechos reservados</p>
         <div>
