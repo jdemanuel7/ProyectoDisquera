@@ -11,20 +11,31 @@
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+    <nav id="cabecera" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="/src/logoARJ.png" alt="Logo">
+                <img src="/src/logo/logoARJ.png" alt="Logo">
             </a>
+
+            <!-- Barra de búsqueda centrada -->
+            <div class="search-container mx-auto">
+                <form class="d-flex">
+                    <input class="form-control search-input" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn search-button" type="submit">🔍</button>
+                </form>
+            </div>
+
+            <!-- Botón de menú en móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="artistasDropdown" role="button"
@@ -51,13 +62,36 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        Descubre lo mejor de la música
-    </div>
 
-    <!-- Sección de Novedades -->
-    <div class="container mt-5">
+    <h1 class="h1">La musica</h1>
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="src/img_carrusel/kendricklamar.jpg" class="d-block w-100" alt="Concierto">
+            </div>
+            <div class="carousel-item">
+                <img src="src/img_carrusel/kaze.webp" class="d-block w-100" alt="DJ">
+            </div>
+            <div class="carousel-item">
+                <img src="src/img_carrusel/periferia.jpg" class="d-block w-100" alt="Guitarra en vivo">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <br>
+    <div>
+
+    </div>
+    <br>
+    <div class="container novedades-section">
         <h2 class="section-title">Novedades</h2>
         <div class="row">
             <div class="col-md-4">
@@ -93,7 +127,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 ARJ Records - Todos los derechos reservados</p>
         <div>
