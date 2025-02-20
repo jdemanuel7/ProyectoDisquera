@@ -32,7 +32,7 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña'])) {
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #000;
+            background-color:rgb(201, 193, 214);
         }
         .login-container {
             background: #333;
@@ -60,11 +60,11 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña'])) {
         <form method="POST" action="">
             <div class="mb-3">
                 <label for="usuario" class="form-label text-white">Usuario</label>
-                <input type="text" class="form-control" id="usuario" name="usuario" required>
+                <input type="text" class="form-control" placeholder="Introducir usuario" id="usuario" name="usuario" required>
             </div>
             <div class="mb-3">
                 <label for="contraseña" class="form-label text-white">Contraseña</label>
-                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+                <input type="password" class="form-control" placeholder="Introducir contraseña" id="contraseña" name="contraseña" required>
             </div>
             <a href="/index.php">
             <button type="submit" class="btn btn-primary w-100">Ingresar</button>
